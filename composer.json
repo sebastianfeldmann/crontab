@@ -1,0 +1,34 @@
+{
+  "name": "sebastianfeldmann/crontab",
+  "description": "Manage your crontab with some simple PHP commands.",
+  "type": "library",
+  "keywords": [
+    "crontab"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sebastian Feldmann",
+      "email": "sf@sebastian-feldmann.info",
+      "role": "lead"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/sebastianfeldmann/crontab/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "SebastianFeldmann\\Crontab\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "ext-spl": "*",
+    "sebastianfeldmann/cli": "~1.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
