@@ -19,7 +19,7 @@ class OperatorTest extends \PHPUnit\Framework\TestCase
     /**
      * Tests Operator::getJobs
      */
-    public function _testDefault()
+    public function testGetJobs()
     {
         $this->assertTrue(true);
     }
