@@ -23,4 +23,12 @@ class OperatorTest extends \PHPUnit\Framework\TestCase
     {
         $this->assertTrue(true);
     }
+
+    /**
+     * Tests Operator::scheduleJob
+     */
+    public function testScheduleJob()
+    {
+        $this->assertTrue(true);
+    }
 }
