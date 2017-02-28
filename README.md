@@ -11,8 +11,7 @@
 
 ## Features
 
-Lists all cron jobs with a nice OO interface.
-You can add jobs to a crontab.
+Lists all cron jobs with a nice OO interface. Add jobs to your crontab.
 
 
 ## Requirements
