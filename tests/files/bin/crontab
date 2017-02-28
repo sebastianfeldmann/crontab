@@ -1,0 +1,2 @@
+# crontab dummy binary
+exit 0;
