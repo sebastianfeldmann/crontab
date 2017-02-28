@@ -18,13 +18,11 @@ You can add jobs to a crontab.
 ## Requirements
 
 * PHP >= 7.0
-    + ext/spl
-* POSIX Shell
-    + crontab
+* POSIX Shell with crontab command
 
 ## Installation
 
-Installing *PHPBU* via Composer is also supported.
+Installing *crontab* via Composer.
 
 ```json
   "require": {
