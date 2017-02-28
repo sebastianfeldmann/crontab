@@ -60,7 +60,7 @@ This will add the following lines to your crontab.
 ```
 
 The crontab parser is looking for commands and their description in the lines above the command.
-The parser expects commands to **NOT** spread over multiple lines with \.  
+The parser expects commands to **NOT** spread over multiple lines with \\.  
 ```
 # Descriptoon for some command
 10 23 * * * some command
