@@ -75,9 +75,16 @@ class Operator
         return $this;
     }
 
+    /**
+     * User setter.
+     *
+     * @param  string $user
+     * @return \SebastianFeldmann\Crontab\Operator
+     */
     public function setUser(string $user) : Operator
     {
         $this->user = $user;
+        return $this;
     }
 
     /**
