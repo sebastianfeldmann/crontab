@@ -9,12 +9,14 @@
  */
 namespace SebastianFeldmann\Crontab;
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Class JobTest
  *
  * @package SebastianFeldmann\Crontab
  */
-class JobTest extends \PHPUnit\Framework\TestCase
+class JobTest extends TestCase
 {
     /**
      * Tests Job::getSchedule

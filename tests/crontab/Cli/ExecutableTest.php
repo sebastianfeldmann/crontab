@@ -10,13 +10,14 @@
 namespace SebastianFeldmann\Crontab\Cli;
 
 use SebastianFeldmann\Crontab\Job;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class ExecutableTest
  *
  * @package SebastianFeldmann\Crontab
  */
-class ExecutableTest extends \PHPUnit\Framework\TestCase
+class ExecutableTest extends TestCase
 {
     /**
      * Tests Executable::createCommandLine

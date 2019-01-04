@@ -9,12 +9,14 @@
  */
 namespace SebastianFeldmann\Crontab\Parser;
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Class ParserTest
  *
  * @package SebastianFeldmann\Crontab
  */
-class ParserTest extends \PHPUnit\Framework\TestCase
+class ParserTest extends TestCase
 {
     /**
      * Tests Vixie::parse
