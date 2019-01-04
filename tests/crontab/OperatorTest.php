@@ -9,12 +9,14 @@
  */
 namespace SebastianFeldmann\Crontab;
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Class OperatorTest
  *
  * @package SebastianFeldmann\Crontab
  */
-class OperatorTest extends \PHPUnit\Framework\TestCase
+class OperatorTest extends TestCase
 {
     /**
      * Tests Operator::getJobs

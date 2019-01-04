@@ -10,13 +10,14 @@
 namespace SebastianFeldmann\Crontab\Output;
 
 use SebastianFeldmann\Crontab\Parser\Vixie;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class ListFormatterTest
  *
  * @package SebastianFeldmann\Crontab
  */
-class ListFormatterTest extends \PHPUnit\Framework\TestCase
+class ListFormatterTest extends TestCase
 {
     /**
      * Tests ListFormatter::format
@@ -35,9 +36,9 @@ class ListFormatterTest extends \PHPUnit\Framework\TestCase
            '20 4 * * * echo 2',
         ]);
 
-        $this->assertEquals(2, count($formatted));
+        $this->assertCount(2, $formatted);
         $this->assertEquals('10 4 * * *', $formatted[0]->getSchedule());
         $this->assertEquals('echo 1', $formatted[0]->getCommand());
-        $this->assertEquals(2, count($formatted[0]->getComments()));
+        $this->assertCount(2, $formatted[0]->getComments());
     }
 }
