@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of SebastianFeldmann\Crontab.
  *
@@ -7,6 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianFeldmann\Crontab\Parser;
 
 /**
@@ -79,7 +81,7 @@ class Result
      *
      * @return string
      */
-    public function getSchedule() : string
+    public function getSchedule(): string
     {
         $schedule  = $this->min . ' ' . $this->hour . ' ' . $this->day . ' ' . $this->month . ' ' . $this->dayOfWeek;
         $schedule .= !empty($this->year) ? ' ' . $this->year : '';

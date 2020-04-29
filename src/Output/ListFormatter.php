@@ -8,9 +8,9 @@ use SebastianFeldmann\Crontab\Parser;
 
 class ListFormatter implements OutputFormatter
 {
-    const ROW_TYPE_EMPTY   = 1;
-    const ROW_TYPE_COMMENT = 2;
-    const ROW_TYPE_COMMAND = 4;
+    protected const ROW_TYPE_EMPTY   = 1;
+    protected const ROW_TYPE_COMMENT = 2;
+    protected const ROW_TYPE_COMMAND = 4;
 
     /**
      * Buffer of comments for a command row.
@@ -65,7 +65,7 @@ class ListFormatter implements OutputFormatter
      */
     protected function handleRow(string $row)
     {
-        switch($this->getRowType($row)) {
+        switch ($this->getRowType($row)) {
             case self::ROW_TYPE_EMPTY:
                 $this->clearCommentBuffer();
                 break;
@@ -117,7 +117,7 @@ class ListFormatter implements OutputFormatter
      *
      * @return array
      */
-    protected function flushCommentBuffer() : array
+    protected function flushCommentBuffer(): array
     {
         $buffer = $this->commentBuffer;
         $this->clearCommentBuffer();
@@ -130,7 +130,7 @@ class ListFormatter implements OutputFormatter
      * @param  string $row
      * @return \SebastianFeldmann\Crontab\Job
      */
-    protected function createEntry(string $row) : Job
+    protected function createEntry(string $row): Job
     {
         $result = $this->parser->parse($row);
         return new Job($result->getSchedule(), $result->command, $this->flushCommentBuffer());
