@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of SebastianFeldmann\Crontab.
  *
@@ -7,6 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianFeldmann\Crontab;
 
 /**
@@ -54,7 +56,7 @@ class Job
         $this->comments = $comments;
     }
 
-    public function getSchedule() : string
+    public function getSchedule(): string
     {
         return $this->schedule;
     }
@@ -64,7 +66,7 @@ class Job
      *
      * @return string
      */
-    public function getCommand() : string
+    public function getCommand(): string
     {
         return $this->command;
     }
@@ -74,7 +76,7 @@ class Job
      *
      * @return array
      */
-    public function getComments() : array
+    public function getComments(): array
     {
         return $this->comments;
     }
@@ -85,7 +87,7 @@ class Job
      *
      * @return string
      */
-    public function formatComments() : string
+    public function formatComments(): string
     {
         $doc = '';
         foreach ($this->comments as $comment) {
@@ -99,7 +101,7 @@ class Job
      *
      * @return string
      */
-    public function __toString() : string
+    public function __toString(): string
     {
         return $this->formatComments() . $this->schedule . ' ' . $this->command . PHP_EOL;
     }

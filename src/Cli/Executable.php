@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of SebastianFeldmann\Crontab.
  *
@@ -7,6 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianFeldmann\Crontab\Cli;
 
 use SebastianFeldmann\Cli\Command\Executable as CliExecutable;
@@ -66,7 +68,7 @@ class Executable
      * @param  string $user
      * @return \SebastianFeldmann\Crontab\Cli\Executable
      */
-    public function forUser(string $user) : Executable
+    public function forUser(string $user): Executable
     {
         $this->user = $user;
         return $this;
@@ -78,7 +80,7 @@ class Executable
      * @param  bool $bool
      * @return \SebastianFeldmann\Crontab\Cli\Executable
      */
-    public function listJobs(bool $bool = true) : Executable
+    public function listJobs(bool $bool = true): Executable
     {
         $this->listJobs = $bool;
         return $this;
@@ -90,7 +92,7 @@ class Executable
      * @param  \SebastianFeldmann\Crontab\Job $job
      * @return \SebastianFeldmann\Crontab\Cli\Executable
      */
-    public function addJob(Job $job) : Executable
+    public function addJob(Job $job): Executable
     {
         $this->job = $job;
         return $this;
@@ -101,7 +103,7 @@ class Executable
      *
      * @return \SebastianFeldmann\Cli\CommandLine
      */
-    public function createCommandLine() : CommandLine
+    public function createCommandLine(): CommandLine
     {
         $line = new CommandLine();
         $cmd  = new CliExecutable($this->cmd);

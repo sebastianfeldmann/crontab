@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of SebastianFeldmann\Crontab.
  *
@@ -7,6 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace SebastianFeldmann\Crontab;
 
 use RuntimeException;
@@ -69,7 +71,7 @@ class Operator
      * @param  string $pathToCmd
      * @return \SebastianFeldmann\Crontab\Operator
      */
-    public function setCommandPath(string $pathToCmd) : Operator
+    public function setCommandPath(string $pathToCmd): Operator
     {
         $this->pathToCmd = $pathToCmd;
         return $this;
@@ -81,7 +83,7 @@ class Operator
      * @param  string $user
      * @return \SebastianFeldmann\Crontab\Operator
      */
-    public function setUser(string $user) : Operator
+    public function setUser(string $user): Operator
     {
         $this->user = $user;
         return $this;
@@ -93,7 +95,7 @@ class Operator
      * @return \SebastianFeldmann\Crontab\Job[]
      * @throws \RuntimeException
      */
-    public function getJobs() : array
+    public function getJobs(): array
     {
         $cmd     = new Cli\Executable();
         $cmdLine = $cmd->forUser($this->user)->createCommandLine();
