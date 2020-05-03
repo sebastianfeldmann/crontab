@@ -31,8 +31,10 @@
     "ext-spl": "*",
     "sebastianfeldmann/cli": "~1.0"
   },
-  "require-dev": {
-    "phpunit/phpunit": "^7.0"
+  "scripts": {
+    "test": "tools/phpunit",
+    "analyse": "tools/phpstan analyse",
+    "style": "tools/phpcs --standard=psr12 src tests"
   },
   "extra": {
     "branch-alias": {
